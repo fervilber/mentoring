@@ -1,0 +1,139 @@
+---
+title: "I Programa Mentor"
+subtitle: "Demarcación de ICCP Mregion de Murcia"
+author: "Fernando Villalba"
+date: " `r Sys.Date()`"
+institute: "`r icon::fa('rocket')` [enRdados](http://www.enrdados.net)"
+output:
+  xaringan::moon_reader:
+    nature:
+      titleSlideClass: [top, left, inverse]    
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+---
+
+layout: true
+background-image: url(logoCCMurcia.png)
+background-position: 100% 0% 
+background-size: 20%
+
+```{r setup, include=FALSE}
+#<div class="my-footer"><span>www.enRdados.net</span></div> 
+options(htmltools.dir.version = FALSE)
+library("xaringan")
+```
+
+---
+
+class: inverse, center, middle
+
+# I PROGRAMA MENTOR 
+
+Esta es la prueba piloto del programa de mentoring en la Region de Murcia
+
+---
+
+# ¿Qué es el mentoring?
+
+## primer acercamiento 
+
+- El **mentoring** es un servicio de apoyo,basado en la escucha, el diálogo,la orientación y compartir experiencias
+
+--
+
+- Mediante el **mentoring** una persona (el mentor) facilita el desarrollo de otra (el mentee) a través del intercambio de sus propios recursos, conocimientos, valores, habilidades perspectivas, actitudes y competencias.
+
+---
+
+#¿Qué es el mentoring?
+
+## Mentorizado
+
+- persona que desea desarrollar o ampliar su visión en algunas áreas especializadas de actividad
+
+- la propuesta es hacer reuniones periódicas entre mentor y mentorizado.
+- los participantes , tanto mentores como..
+
+---
+
+# Objetivos el programa
+
+## Los principales
+
+- Ayudar
+
+- Acogida e introduccion del joven ingeniero en el colegio
+
+- Establecer vinculos
+
+---
+
+# Desarrollo del programa
+
+La metodología y desarrolo del programa será:
+
+- Inscripción como mentor y metorizado
+- Analisis de los perfiles pra 
+
+![informe pdf](IMG-20190910-WA0003.jgg)
+
+---
+
+background-image: url(fondo1.png)
+background-size: cover
+
+
+# Programa
+
+El programa del curso se basa en :
+
+las parejas se compromentes as
+
+```{r, comment='#'}
+#class: center, bottom, inverse
+
+```
+
+
+---
+
+# Ejemplos: Informes Dinámicos 1
+
+![informe agua](IMG-20190910-WA0003.jpg)
+
+# Ejemplos: Mapas 3
+
+![mapa 2](valdelentisco.png)
+
+---
+
+# Cosas mias: Blog
+
+<iframe width="800" height="400" scrolling="no" frameborder="no"  src="http://www.enrdados.net/"> </iframe>
+
+---
+
+# Cosas mias: App
+
+Ejemplo del mapa de generador de islas aleatorias y mapas:
+
+- <https://nolugar.shinyapps.io/mapatesoro/>
+
+![app](isla03.png)
+
+---
+
+# Cosas mias: AWS
+
+Estoy probando cosas en AWS:
+
+- <http://35.180.138.205/shiny/rstudio/desaladoras/>
+
+<iframe width="800" height="400" scrolling="no" frameborder="no"  src="http://35.180.138.205/shiny/rstudio/desaladoras/"> </iframe>
+
+---
+
+class: inverse, center, middle
+
+# Gracias!

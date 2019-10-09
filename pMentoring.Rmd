@@ -1,0 +1,190 @@
+---
+title: "I Programa Mentor"
+subtitle: "Demarcación Region de Murcia CICCP"
+author: "Fernando Villalba Bergado"
+date: " `r Sys.Date()`"
+institute: "`r icon::fa('rocket')` CICCP"
+output:
+  xaringan::moon_reader:
+    nature:
+      titleSlideClass: [top, left, inverse]    
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: true
+editor_options: 
+  chunk_output_type: console
+---
+
+layout: true
+background-image: url(imag/logoCCMurcia.png)
+background-position: 100% 0% 
+background-size: 15%
+
+```{r setup, include=FALSE}
+#<div class="my-footer"><span>www.enRdados.net</span></div> 
+options(htmltools.dir.version = FALSE)
+library("xaringan")
+
+# https://yihui.name/en/2017/08/why-xaringan-remark-js/
+# para verolo en directo
+#  xaringan::inf_mr()
+
+#https://yihui.name/en/2019/02/ultimate-inf-mr/
+# https://slides.yihui.name/xaringan/#8
+
+# https://yihui.name/en/2017/08/why-xaringan-remark-js/
+```
+
+---
+
+class: inverse, center, middle
+
+# ¡Empezamos!
+
+---
+
+# ¿Qué es el mentoring?
+
+- El **mentoring** es un servicio de apoyo, basado en la *escucha*, el *diálogo*,la *orientación* y compartir experiencias.
+
+- El **mentor** facilita el desarrollo del **pupilo**, a través del intercambio de sus propios recursos, conocimientos, **valores**, *habilidades*, *perspectivas*, **actitudes** y competencias.
+
+- El *pupilo* desarrolará habilidades y conocimientos que le ayudarán a alcanzar las metas que *él mismo defina*.
+
+- El mentor le ofrece la oportunidad de desarrollar nuevas perspectivas, *hacerse preguntas*, conocer otras inquietudes y ampliar su visión personal y profesional.
+
+---
+
+# Participantes
+
+.pull-left[
+
+# Mentor
+
+- a bullet
+- another bullet
+
+# Pupilo
+
+]
+
+.pull-right[
+
+# Empresa
+- a bullet
+- another bullet
+]
+---
+
+# Participantes
+
+### 1. La empresa
+- los programas de mentoring se desarrollan en un entorno concreto de actividad, en una empresa, en un colegio profesional,...que arropa y coordina el proceso
+
+### 2. El mentor
+ 
+- es experto en una materia de actividad y además desea apoyar e intercambiar su experiencia, vivencia y visión con otras personas.
+
+### 3. El pupilo - mentee
+
+- es la persona que desea desarrollar o ampliar su visión en su campo de actividad.
+- el mentee busca conocer la vivencia y experiencias del mentor para ampliar su visión.
+- se requiere una actitud abierta y de escucha
+
+---
+
+# Objetivos el programa
+
+
+### - Ayudar, compartir, ampliar las vivencias, socializar
+
+### - Acogida e introduccion del joven ingeniero 
+
+### - Establecer vinculos personales con profesionales que de otra forma es muy dificil de hacer
+
+### - Ver opciones y caminos y carreras que no se estudian en la universidad
+
+
+---
+
+background-image: url(imag/fondo1.jpg)
+background-size: cover
+
+
+# Desarrollo del programa
+
+## ¿qué haremos?
+
+- 3 jornadas comunes
+
+- 2 meses de reuniones periodicas entre mentor y pupilo
+
+- objetivo verse al menos 5veces en 9 semanas de programa
+
+- seguimiento continuo de coordinación
+
+---
+
+background-image: url(imag/fondo2.jpg)
+background-size: cover
+
+# Talleres
+### Jornada I
+- taller de marca personal
+
+### Jornada 2
+- taller experiencias vitales.
+
+### clausura
+- trabajo fin de programa.
+- cada mentee tendrá que realizar un resumen en publico del programa.
+
+---
+
+# Desarrollo del programa
+
+## Calendario
+
+```{r echo=FALSE, out.width = "500px", out.height="400px"}
+knitr::include_graphics("imag/calendario2019.jpg")
+```
+
+---
+
+# Desarrollo del programa
+
+ <img src="imag/calendario2019.jpg" height="400px" width="300px" />
+
+---
+
+class: inverse, center, middle
+
+# Gracias!
+
+---
+
+# calendario
+
+```{r echo=FALSE, tidy=TRUE, fig.retina=3,out.width = "600px", out.height="300px"}
+#devtools::install_github("rasmusab/fullcalendar")
+library(fullcalendar)
+#require("fullcalendar/dist/locale/es.js")
+data = data.frame(title = c("Presentacion","Taller Arturo.Berzosa","programa mentoring"),#paste("Event", 1:3),
+                 start = c("2019-10-15", "2019-10-01", "2019-10-15"),
+                 end = c("2019-10-15", "2019-10-04", "2019-12-18"),
+                 color = c("red", "blue", "green"))
+fullcalendar(data,
+             settings=list(weekNumbers=FALSE,plugins=list('bootstrap', 'interaction', 'dayGrid', 'timeGrid', 'list'),
+                 header=list(left= 'prev,next, today',center= 'title',right= 'month,agendaWeek,agendaDay'),
+                 defaultDate='2019-10-12',
+                 #now= '2019-08-07',editable= TRUE,themeSystem='standard',
+                 #aspectRatio= 2,
+                 firstDay=1,
+                 dayNamesShort=list('Dom','Lun','Mar','Mié','Jue','Vie','Sáb'),
+                 monthNames=list('Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'),
+                 monthNamesShort=list('Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'),
+                 dayNames=list('Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado') 
+#                 Theme='Solar'
+                 ))
+```
+
