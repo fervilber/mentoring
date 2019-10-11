@@ -39,22 +39,59 @@ library("xaringan")
 
 class: inverse, center, middle
 
-# ¡Empezamos!
+# ¿cómo hemos llegado hasta aquí?
+
+```{r echo=FALSE, out.width = "600px", out.height="400px"}
+knitr::include_graphics("imag/puertas.jpg")
+```
+
+---
+
+# cada paso nos hace nuestro camino
+
+* nos hacemos como las personas que nos rodean
+* en muchas situaciones es dificil acceder a la experiencia
+* las capacidades técnicas no son la clave profesional
 
 ---
 
 # ¿Qué es el mentoring?
 
-- El **mentoring** es un servicio de apoyo, basado en la *escucha*, el *diálogo*,la *orientación* y compartir experiencias.
+- El **mentoring** es un servicio de apoyo, basado en la *escucha*, el *diálogo*,la *orientación* y *compartir experiencias*.
 
-- El **mentor** facilita el desarrollo del **pupilo**, a través del intercambio de sus propios recursos, conocimientos, **valores**, *habilidades*, *perspectivas*, **actitudes** y competencias.
+- El **mentor** facilita el desarrollo del **pupilo**, a través del intercambio de sus propios recursos, conocimientos, valores, habilidades, perspectivas, actitudes y competencias.
 
-- El *pupilo* desarrolará habilidades y conocimientos que le ayudarán a alcanzar las metas que *él mismo defina*.
+- El **pupilo** desarrolará habilidades y conocimientos que le ayudarán a alcanzar las metas que *él mismo defina*.
 
 - El mentor le ofrece la oportunidad de desarrollar nuevas perspectivas, *hacerse preguntas*, conocer otras inquietudes y ampliar su visión personal y profesional.
 
+```{r echo=FALSE, out.width = "600px", out.height="200px"}
+knitr::include_graphics("imag/mentoring.jpg")
+```
+
 ---
 
+# ¿Qué es un mentor?
+
+*  consejero, guía, maestro, padrino
+
+* Sus objetivos serán guiar, desafiar, estimular y potenciar el talento de su mentee a nivel profesional y personal.
+
+
+
+---
+
+# Etapas  de un programa mentoring
+
+1- Construcción de la relación entre mentor y mentee
+
+2- Intercambio de información y fijación de metas
+
+3- Definir trabajos y acciones para lograr los objetivos
+
+4- Fin del programa mentoring y planificación de futuro
+
+---
 # Participantes
 
 .pull-left[
@@ -71,8 +108,13 @@ class: inverse, center, middle
 .pull-right[
 
 # Empresa
+
 - a bullet
 - another bullet
+
+```{r echo=FALSE, out.width = "500px", out.height="200px"}
+knitr::include_graphics("imag/jodaLuke.jpg")
+```
 ]
 ---
 
@@ -107,7 +149,7 @@ class: inverse, center, middle
 
 ---
 
-background-image: url(imag/fondo1.jpg)
+background-image: url(imag/fondo3.jpg)
 background-size: cover
 
 
