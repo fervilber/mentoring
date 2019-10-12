@@ -1,9 +1,9 @@
 ---
 title: "I Programa Mentor"
 subtitle: "Demarcación Region de Murcia CICCP"
-author: "Fernando Villalba Bergado"
+author: " "
 date: " `r Sys.Date()`"
-institute: "`r icon::fa('rocket')` CICCP"
+institute: "`r icon::fa('rocket')`     Fernando Villalba Bergado"
 output:
   xaringan::moon_reader:
     nature:
@@ -18,7 +18,7 @@ editor_options:
 layout: true
 background-image: url(imag/logoCCMurcia.png)
 background-position: 100% 0% 
-background-size: 15%
+background-size: 12%
 
 ```{r setup, include=FALSE}
 #<div class="my-footer"><span>www.enRdados.net</span></div> 
@@ -39,175 +39,185 @@ library("xaringan")
 
 class: inverse, center, middle
 
-# ¿cómo hemos llegado hasta aquí?
+# y ahora ¿ qué ?
 
-```{r echo=FALSE, out.width = "600px", out.height="400px"}
+```{r echo=FALSE, fig.align='center', out.width = "600px", out.height="400px"}
 knitr::include_graphics("imag/puertas.jpg")
 ```
 
 ---
 
-# cada paso nos hace nuestro camino
+# Conocer, para decidir en libertad
 
-* nos hacemos como las personas que nos rodean
-* en muchas situaciones es dificil acceder a la experiencia
-* las capacidades técnicas no son la clave profesional
+* el aprendizaje de una carrera no es completo pues se centra en conocimientos técnicos 
+
+* muchas veces no sabemos que nos espera detrás de cada puerta
+
+* los conocimientos **técnicos** son muy importantes, pero no marcan el camino de la mayoría de las personas
+
+* sin pasar por el proceso de prueba y error no se completa la educación
+
+## Para suplir estas y otras muchas deficiencias del aprendizaje se desarrolla el *mentoring*
 
 ---
 
 # ¿Qué es el mentoring?
 
-- El **mentoring** es un servicio de apoyo, basado en la *escucha*, el *diálogo*,la *orientación* y *compartir experiencias*.
+- El **mentoring** es un proceso de desarrollo personal y profesional en el que una persona con más experiencia y conocimeintos ayuda a otras que no disponen de esa experiencia ni conocimientos.
 
-- El **mentor** facilita el desarrollo del **pupilo**, a través del intercambio de sus propios recursos, conocimientos, valores, habilidades, perspectivas, actitudes y competencias.
+- Es un servicio de apoyo, basado en la *escucha*, el *diálogo*,la *orientación* y *compartir experiencias*.
 
-- El **pupilo** desarrolará habilidades y conocimientos que le ayudarán a alcanzar las metas que *él mismo defina*.
-
-- El mentor le ofrece la oportunidad de desarrollar nuevas perspectivas, *hacerse preguntas*, conocer otras inquietudes y ampliar su visión personal y profesional.
-
-```{r echo=FALSE, out.width = "600px", out.height="200px"}
+```{r echo=FALSE, out.width = "600px", out.height="200px",fig.align='center'}
 knitr::include_graphics("imag/mentoring.jpg")
 ```
 
 ---
 
-# ¿Qué es un mentor?
+# Objetivos del programa
 
-*  consejero, guía, maestro, padrino
+El **mentoring** es una metodología complementaria de aprendizaje basada en la experiencia que:
 
-* Sus objetivos serán guiar, desafiar, estimular y potenciar el talento de su mentee a nivel profesional y personal.
+- Favorece la transmision de valores además de conocimeinto
+- Agiliza la adquisición de experiencia
+- Crea vínculos personales, profesionales y de colectivo.
+- Motiva, mejora la confianza y refuerza la iniciativa personal.
 
-
-
+```{r echo=FALSE, out.width = "500px", out.height="250px",fig.align='center'}
+knitr::include_graphics("imag/civileng.jpg")
+```
 ---
 
-# Etapas  de un programa mentoring
+# El Origen
 
-1- Construcción de la relación entre mentor y mentee
+Todo viene de la *"La Odisea”* de *Homero*
 
-2- Intercambio de información y fijación de metas
+* Ulises (*Odiseo en Griego*) parte a la batalla de **Troya**, en la que sería vencedor. 
+  Antes de marchar dejó a su hijo **Telémaco** a cargo de un gran amigo **Méntor**.
+  
+* En realidad **Méntor** es la diosa *Atenea* que guía, conduce y aconseja a *Telémaco*, para que desarrolle y potencie sus habilidades, su talento.
+  
+* **Méntor** no inculca, no da clases magistrales; emplea el diálogo para que el discípulo aprenda por sí mismo, y de este modo, llegue a convertirse en un líder eficaz y en un hombre que piensa en libertad.  
 
-3- Definir trabajos y acciones para lograr los objetivos
-
-4- Fin del programa mentoring y planificación de futuro
+```{r echo=FALSE,fig.align='center', out.width = "200px", out.height="200px"}
+knitr::include_graphics("imag/telemachus_and_mentor1.jpg")
+```
 
 ---
-# Participantes
+class: inverse
+
+# ¿Quíenes intervienen?
 
 .pull-left[
 
 # Mentor
 
-- a bullet
-- another bullet
+- Facilita el desarrollo del **pupilo**, a través del intercambio de sus propios recursos, conocimientos, valores, habilidades, perspectivas, actitudes y competencias.
 
-# Pupilo
+- Le ofrece la oportunidad de desarrollar nuevas perspectivas, *hacerse preguntas*, conocer otras inquietudes y ampliar su visión  personal y profesional.
 
 ]
 
 .pull-right[
+# Pupilo
 
-# Empresa
-
-- a bullet
-- another bullet
+- El **pupilo** desarrolará habilidades y conocimientos que le ayudarán a alcanzar las metas que *él mismo defina*.
 
 ```{r echo=FALSE, out.width = "500px", out.height="200px"}
 knitr::include_graphics("imag/jodaLuke.jpg")
 ```
 ]
----
-
-# Participantes
-
-### 1. La empresa
-- los programas de mentoring se desarrollan en un entorno concreto de actividad, en una empresa, en un colegio profesional,...que arropa y coordina el proceso
-
-### 2. El mentor
- 
-- es experto en una materia de actividad y además desea apoyar e intercambiar su experiencia, vivencia y visión con otras personas.
-
-### 3. El pupilo - mentee
-
-- es la persona que desea desarrollar o ampliar su visión en su campo de actividad.
-- el mentee busca conocer la vivencia y experiencias del mentor para ampliar su visión.
-- se requiere una actitud abierta y de escucha
 
 ---
+# Habilidades requeridas
+.pull-left[
+# Mentor
+- Escucha activa
+- Construccion gradual de confianza
+- Definición de objetivos y desarrollo de capacidades
+- Dar soporte e inspiración
+- Ser ejemplo
 
-# Objetivos el programa
+]
+.pull-right[
+# Pupilo
+- Escucha activa
+- Voluntad de aprendizaje
+- Construcción gradual de confianza
+- Definir objetivos
+- Valentía, coraje
 
 
-### - Ayudar, compartir, ampliar las vivencias, socializar
+```{r echo=FALSE, fig.align='center', out.width = "200px", out.height="200px"}
+knitr::include_graphics("imag/leongato.jpg")
+```
 
-### - Acogida e introduccion del joven ingeniero 
-
-### - Establecer vinculos personales con profesionales que de otra forma es muy dificil de hacer
-
-### - Ver opciones y caminos y carreras que no se estudian en la universidad
-
-
+]
 ---
 
-background-image: url(imag/fondo3.jpg)
-background-size: cover
+# Etapas de un programa mentoring
 
+ Lo primero es tener un entorno de desarrollo favorable dentro de la empresa, colegio profesional...después:
 
-# Desarrollo del programa
+- Construcción de la relación entre mentor y pupillo
 
-## ¿qué haremos?
+- Intercambio de información y fijación de metas
 
-- 3 jornadas comunes
+- Definir trabajos y acciones para lograr los objetivos
 
-- 2 meses de reuniones periodicas entre mentor y pupilo
+- Fin del programa mentoring y planificación de futuro
 
-- objetivo verse al menos 5veces en 9 semanas de programa
-
-- seguimiento continuo de coordinación
-
----
-
-background-image: url(imag/fondo2.jpg)
-background-size: cover
-
-# Talleres
-### Jornada I
-- taller de marca personal
-
-### Jornada 2
-- taller experiencias vitales.
-
-### clausura
-- trabajo fin de programa.
-- cada mentee tendrá que realizar un resumen en publico del programa.
-
----
-
-# Desarrollo del programa
-
-## Calendario
-
-```{r echo=FALSE, out.width = "500px", out.height="400px"}
-knitr::include_graphics("imag/calendario2019.jpg")
+```{r echo=FALSE, fig.align='center',out.width = "700px", out.height="200px"}
+knitr::include_graphics("imag/montana.jpg")
 ```
 
 ---
 
-# Desarrollo del programa
+background-image: url(imag/fondo5.jpg)
+background-size: cover
 
- <img src="imag/calendario2019.jpg" height="400px" width="300px" />
+# Desarrollo del I programa mentór CICCP Murcia
+
+
+- 2 jornadas con talleres grupales
+
+- 2 meses de relaciones mentor y pupilo (la meta es tener al menos 5 encuentros con el mentor durante el programa de 9 semanas)
+
+- seguimiento continuo por parte del coordinador
+
+- clausura y exposicion final.
 
 ---
 
-class: inverse, center, middle
+background-image: url(imag/fondo6.jpg)
+background-size: cover
 
-# Gracias!
+# Jornadas comunes
+
+.pull-left[
+### Taller I
+- Desarrollo de marca personal
+
+### Taller II
+- experiencias vitales.
+
+### Clausura  
+- exposición de trabajo fin de programa.
+- fiesta despedida
+]
+
+.pull-right[
+
+```{r echo=FALSE, out.width = "500px", out.height="400px"}
+knitr::include_graphics("imag/calendario2019.jpg")
+
+```
+]
 
 ---
 
-# calendario
+# Calendario
 
-```{r echo=FALSE, tidy=TRUE, fig.retina=3,out.width = "600px", out.height="300px"}
+```{r echo=FALSE, tidy=TRUE, fig.retina=3,out.width = "700px", out.height="300px"}
 #devtools::install_github("rasmusab/fullcalendar")
 library(fullcalendar)
 #require("fullcalendar/dist/locale/es.js")
@@ -229,4 +239,12 @@ fullcalendar(data,
 #                 Theme='Solar'
                  ))
 ```
+
+---
+
+class: inverse, center, middle
+
+# si tienes talento, no lo uses para llegar más lejos, úsalo para llegar más acompañado
+
+Muchas Gracias!!
 
