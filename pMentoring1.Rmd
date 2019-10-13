@@ -6,11 +6,12 @@ date: " `r Sys.Date()`"
 institute: "`r icon::fa('rocket')`     Fernando Villalba Bergado"
 output:
   xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts]
     nature:
       titleSlideClass: [top, left, inverse]    
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: true
+      countIncrementalSlides: false
 editor_options: 
   chunk_output_type: console
 ---
@@ -19,6 +20,12 @@ layout: true
 background-image: url(imag/logoCCMurcia.png)
 background-position: 100% 0% 
 background-size: 12%
+
+
+<div class="my-footer"><span>I Programa Mentor CICCP Murcia 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+FVB</span></div> 
 
 ```{r setup, include=FALSE}
 #<div class="my-footer"><span>www.enRdados.net</span></div> 
@@ -54,12 +61,12 @@ knitr::include_graphics("imag/puertas.jpg")
 
 * los conocimientos **técnicos** son muy importantes, pero no marcan el camino de la mayoría de las personas
 
-* sin pasar por el proceso de prueba y error no se completa la educación
+* sin pasarwqw por el proceso de prueba y error no se completa la educación
 
 ## Para suplir estas y otras muchas deficiencias del aprendizaje se desarrolla el *mentoring*
 
-```{r echo=FALSE, fig.align='center', out.width = "600px", out.height="400px"}
-knitr::include_graphics("imag/competencias_soft_competencias_hard_infografia.jpg")
+```{r echo=FALSE, fig.align='center', out.width = "400px", out.height="400px"}
+knitr::include_graphics("imag/competencias_soft_competencias_hard_infografia.png")
 ```
 
 ---
