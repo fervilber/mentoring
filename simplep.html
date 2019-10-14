@@ -3,12 +3,14 @@
   <head>
     <title>Cómo hacer presentaciones con R</title>
     <meta charset="utf-8" />
+    <meta name="author" content="Fernando Villalba" />
     <meta name="date" content="2019-10-14" />
-    <link href="simplep_files/remark-css/default.css" rel="stylesheet" />
-    <link href="simplep_files/remark-css/default-fonts.css" rel="stylesheet" />
-    <link href="simplep_files/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
-    <link href="simplep_files/ionicons/css/ionicons.min.css" rel="stylesheet" />
-    <link href="simplep_files/academicons/css/academicons.min.css" rel="stylesheet" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="libs/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="libs/academicons/css/academicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="animate.min.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -16,6 +18,7 @@ class: center, middle, inverse, title-slide
 
 # Cómo hacer presentaciones con R
 ## Todo lo que tienes que saber
+### Fernando Villalba
 ### <i class="fas  fa-rocket fa-spin "></i> <a href="https://www.enRdados.net" class="uri">https://www.enRdados.net</a>
 ### 2019-10-14
 
@@ -29,8 +32,8 @@ background-size: 10%
 
 
 
-
 ---
+class: animated, fadeInRight
 
 # Paquetes necesarios
 
@@ -44,12 +47,11 @@ background-size: 10%
 - [icons](https://github.com/ropenscilabs/icon): muy útil para insertar iconos  `devtools::install_github("ropenscilabs/icon")`
 
 ---
+class: animated, fadeInLeft
 
 # Ver cambios en tiempo real
 
-Un problema con Rmarkdown es que cuando escribes el código de la presentación tienes que dar constantemente a *knitr* para previsualizar el resultado.
-
-Esto se ha solucionado con el adding de RSTUDIO *Infinite Moon Reader*, ahora para previsualizar en tiempo real la presentación lo que hacemos es ejecutar el siguiente código y nos aparecerá en la ventana de vista la presentación con los cambios que vayamos haciendo.
+Un problema con Rmarkdown es que cuando escribes el código de la presentación tienes que dar constantemente a *knitr*. Esto se ha solucionado con el adding de RSTUDIO *Infinite Moon Reader*, ahora para previsualizar en tiempo real la presentación lo que hacemos es ejecutar el siguiente código y nos aparecerá en la ventana de vista la presentación con los cambios que vayamos haciendo.
 
 
 ```r
@@ -57,6 +59,7 @@ Esto se ha solucionado con el adding de RSTUDIO *Infinite Moon Reader*, ahora pa
 ```
 
 ---
+class: animated, zoomInUp
 
 # Títulos
 
@@ -80,6 +83,7 @@ Los titulos se crean como en Rmarkdown con el símbolo #
 Es así <i class="fas  fa-rocket fa-3x "></i>
 
 ---
+class: animated, fadeIn
 
 # Insertar imágenes
 
@@ -88,7 +92,7 @@ Se pueden insertar imágenes con código Rmarkdown por ejemplo así:
 ```{}
 ![imagen de muestra](ruta/a/la/imagen.jpg)
 ```
-pero esto lleva a tener muy poco control sobre cómo sale en la pantalla, por lo que yo prefiero hacerlo a través de `knitr`, de esta forma en el encabezado del cuadro de código le puedo meter muchas más opciones, de tamaño centrado etc..
+pero esto lleva a tener muy poco control sobre cómo sale en la pantalla, por lo que yo prefiero hacerlo a través de `knitr`, de esta forma en el encabezado del cuadro de código le puedo meter muchas  más opciones, de tamaño centrado etc..
 con esto obtengo
 
 ```{}
@@ -100,19 +104,20 @@ knitr::include_graphics("imag/civileng.jpg")
 &lt;img src="imag/civileng.jpg" width="500px" height="250px" style="display: block; margin: auto;" /&gt;
 
 ---
+class: animated, fadeIn
 
 # Formato
 
 El formato de la presentación se selecciona dentro del encabezado *YAML* tras `css`. Como vemos se pone el nombre del theme de formato y el de las fuentes o letras sin la extension css:
 
-
-```r
+```{}
 output:
   xaringan::moon_reader:
     css: [default, metropolis, metropolis-fonts]
 ```
 
 Siempre conviene dejar el *default* primero, y a continuación cualquiera de estos
+
 
 ```r
 names(xaringan:::list_css())
@@ -132,14 +137,14 @@ names(xaringan:::list_css())
 ```
 
 Si sabemos *css*, y cambiamos formatos lo podemos incluir también, poniendo la extension:
-
-```r
+```{}
 output:
   xaringan::moon_reader:
     css: ["my-theme.css", "my-font.css"]
 ```
 
 ---
+class: animated, jackInTheBox
 
 # Layout
 
@@ -190,12 +195,13 @@ Si no ponemos nada la clase será la de layout, pero si ponemos alguna caracteri
 
 # Insertar videos
 
-https://github.com/gnab/remark/wiki/Formatting#video
+Hay que hacerlo como iframe
 
+```{}
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/HiyEZOKgSj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+```
 
-![](https://youtu.be/LussVnrLZKU){width="560" height="315"}
-
-&lt;iframe width="560" height="315" src="https://youtu.be/LussVnrLZKU" frameborder="0" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/HiyEZOKgSj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 
 ---
 
@@ -268,6 +274,41 @@ Lo hacemos con código css:
 
 ---
 
+# Animación cambio diapositiva
+
+Es posible usar reveals.js para hacer efectos en el cambio de diapositiva, aunque la documentación de xaringan no lo pone, podemos usar directamente reveals.js para ello de la siguiente forma:
+
+1. descargamos el css de efectos, en la carpeta de proyecto
+
+```r
+download.file("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css", destfile ="animate.min.css" )
+```
+1. añadimos el css y transition en YAML:
+```{}
+output:
+    xaringan::moon_reader:
+{     transition: slide}
+     lib_dir: libs
+     css:
+      - default
+      - default-fonts 
+{      - "animate.min.css"}       
+     nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+```
+1. Añadimos en el layout (si es en todas) o en la diapo que queramos el tipo de transición.Para buscar el efecto que nos guste mas es muy util esta web: https://daneden.github.io/animate.css/
+
+```{}
+class: animated, bounceInDown
+```
+
+
+
+
+---
+
 # icons
 
 El uso de iconos es muy interesante. Usaremos la librería icons para insertar cualquier icono de las fuentes dsiponibles
@@ -308,7 +349,7 @@ output:
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, middle, animated, bounceInDown
 
 &lt;img src="imag/estoestodo.jpg" width="500px" height="400px" style="display: block; margin: auto;" /&gt;
 
@@ -318,7 +359,11 @@ Muchas Gracias!!
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create();
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
