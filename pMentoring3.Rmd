@@ -33,6 +33,10 @@ library("xaringan")
 # https://slides.yihui.name/xaringan/#8
 
 # https://yihui.name/en/2017/08/why-xaringan-remark-js/
+
+# para guardar la presentacion como pdf
+# necesito el paquete pagedown y chrome instalado en el PC
+# pagedown::chrome_print("C:/R/proyectos/mentoring/pMentoring3.html")
 ```
 
 
@@ -40,9 +44,9 @@ library("xaringan")
 
 # ¿Qué es el mentoring?
 
-- `r icon::fa('arrow-alt-circle-right')` El **mentoring** es un proceso de desarrollo personal y profesional en el que una persona con más experiencia y conocimientos ayuda a otras que no disponen de esa experiencia ni conocimientos.
+ `r icon::fa('arrow-alt-circle-right')` El **mentoring** es un proceso de desarrollo personal y profesional en el que una persona con más experiencia y conocimientos ayuda a otras que no disponen de esa experiencia ni conocimientos.
 
-- `r icon::fa('arrow-alt-circle-right')` Es un servicio de apoyo, basado en la *escucha*, el *diálogo*,la *orientación* y *compartir experiencias*.
+ `r icon::fa('arrow-alt-circle-right')` Es un servicio de apoyo, basado en la *escucha*, el *diálogo*,la *orientación* y *compartir experiencias*.
 
 
 ```{r echo=FALSE, out.width = "600px", out.height="200px",fig.align='center'}
@@ -53,9 +57,9 @@ knitr::include_graphics("imag/mentoring.jpg")
 
 # El Origen
 
-Todo viene de la *"La Odisea”* de *Homero*
+Todo viene de *"La Odisea”* de *Homero*
 
-* Ulises (*Odiseo en Griego*) parte a la batalla de **Troya**, en la que sería vencedor. 
+* Ulises (*Odiseo en griego*) parte a la batalla de **Troya**, en la que sería vencedor. 
   Antes de marchar dejó a su hijo **Telémaco** a cargo de un gran amigo **Méntor**.
   
 * En realidad **Méntor** es la diosa *Atenea* que guía, conduce y aconseja a *Telémaco*, para que desarrolle y potencie sus habilidades, su talento.
@@ -75,6 +79,8 @@ class: inverse, center, middle
 knitr::include_graphics("imag/puertas.jpg")
 ```
 
+--
+
 El mentoring es la `r icon::fa('key')` para abrir muchas `r icon::fa('door-open')`
 
 ---
@@ -83,7 +89,7 @@ El mentoring es la `r icon::fa('key')` para abrir muchas `r icon::fa('door-open'
 
 El **mentoring** es una metodología complementaria de aprendizaje basada en la experiencia que:
 
-- Favorece la transmision de valores además de conocimeinto `r icon::fa('people-carry')`
+- Favorece la transmisión de valores además de conocimiento `r icon::fa('people-carry')`
 - Agiliza la adquisición de experiencia `r icon::fa('user-graduate')`
 - Crea vínculos personales, profesionales y de colectivo.`r icon::fa('handshake')`
 - Motiva, mejora la confianza y refuerza la iniciativa personal. `r icon::fa('award')`
@@ -97,7 +103,8 @@ class: inverse
 
 # Objetivos del programa II
 
-* `r icon::fa('angellist')` Actuar sobre vuestras habilidades blandas 
+* Actuar sobre vuestras habilidades blandas 
+
 * La carreta te aporta conocimientos técnicos, pero no otras habilidades muy necesarias para la carrera profesional
 
 ```{r echo=FALSE, fig.align='center', out.width = "600px", out.height="400px"}
@@ -124,7 +131,7 @@ class: inverse
 .pull-right[
 # Pupilo
 
-- El **pupilo** desarrolará habilidades y conocimientos que le ayudarán a alcanzar las metas que *él mismo defina*.
+- El **pupilo** desarrollará habilidades y conocimientos que le ayudarán a alcanzar las metas que *él mismo defina*.
 
 ```{r echo=FALSE, out.width = "500px", out.height="200px"}
 knitr::include_graphics("imag/jodaLuke.jpg")
@@ -136,7 +143,7 @@ knitr::include_graphics("imag/jodaLuke.jpg")
 .pull-left[
 # Mentor
 - Escucha activa
-- Construccion gradual de confianza
+- Construcción gradual de confianza
 - Definición de objetivos y desarrollo de capacidades
 - Dar soporte e inspiración
 - Ser ejemplo
@@ -186,13 +193,19 @@ knitr::include_graphics("imag/montana.jpg")
 
 - Análisis de los perfiles y emparejamientos
 
+--
+
 - 2 jornadas con talleres grupales
+
+--
 
 - 2 meses de relaciones mentor y pupilo (la meta es tener al menos 5 encuentros con el mentor durante el programa de 9 semanas)
 
-- seguimiento continuo por parte del coordinador
+- Seguimiento continuo por parte del coordinador
 
-- Clausura y exposicion final.
+--
+
+- Clausura y exposición final.
 
 ---
 
@@ -209,8 +222,8 @@ background-size: cover
 - Experiencias vitales.
 
 ### Clausura  
-- exposición de trabajo fin de programa.
-- fiesta despedida
+- Exposición de trabajo fin de programa.
+- Coloquio de cierre de programa
 ]
 
 .pull-right[
