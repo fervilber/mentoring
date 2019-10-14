@@ -6,7 +6,12 @@ date: " `r Sys.Date()`"
 institute: " `r icon::fa_rocket(animate = 'spin')`  Fernando Villalba Bergado"
 output:
     xaringan::moon_reader:
-    lib_dir: libs
+     transition: slide
+     lib_dir: libs
+     css:
+      - default
+      - default-fonts 
+      - "animate.min.css"   
     nature:
       highlightStyle: github
       highlightLines: true
@@ -41,6 +46,7 @@ library("xaringan")
 
 
 ---
+class: animated, fadeInRight
 
 # ¿Qué es el mentoring?
 
@@ -54,6 +60,7 @@ knitr::include_graphics("imag/mentoring.jpg")
 ```
 
 ---
+class: animated, fadeInLeft
 
 # El Origen
 
@@ -84,6 +91,7 @@ knitr::include_graphics("imag/puertas.jpg")
 El mentoring es la `r icon::fa('key')` para abrir muchas `r icon::fa('door-open')`
 
 ---
+class: animated, jackInTheBox
 
 # Objetivos del programa
 
@@ -97,8 +105,7 @@ El mentoring es la `r icon::fa('key')` para abrir muchas `r icon::fa('door-open'
 knitr::include_graphics("imag/civileng.jpg")
 ```
 ---
-
-class: inverse
+class: inverse, animated, fadeInLeft
 
 # Objetivos del programa II
 
@@ -112,7 +119,7 @@ knitr::include_graphics("imag/competencias_soft_competencias_hard_infografia.png
 
 
 ---
-class: inverse
+class: inverse,animated, fadeInLeft
 
 # ¿Quíenes intervienen?
 
@@ -138,6 +145,7 @@ knitr::include_graphics("imag/jodaLuke.jpg")
 ]
 
 ---
+
 # Habilidades requeridas
 .pull-left[
 # Mentor
@@ -167,6 +175,7 @@ knitr::include_graphics("imag/leongato.jpg")
 
 ]
 ---
+class: animated, jackInTheBox
 
 # Etapas de un programa mentoring
 
@@ -235,7 +244,7 @@ knitr::include_graphics("imag/calendario2019.jpg")
 
 ---
 
-class: inverse, center, middle
+class: inverse, center, middle,animated, jackInTheBox
 
 # Si tienes talento, no lo uses para llegar más lejos, úsalo para llegar más acompañado
 
