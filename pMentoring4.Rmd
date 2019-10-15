@@ -243,7 +243,39 @@ knitr::include_graphics("imag/calendario2019.jpg")
 ]
 
 ---
+class: animated, jackInTheBox
+# Inscritos
 
+```{r echo=FALSE}
+participes<-data.frame(stringsAsFactors=FALSE,
+                       id=c(1,2,3,4,5,0,0),
+      Mentee = c("Carlos", "Miriam", "Patricio", "Marco", "Álvaro", " " , " "),
+    Mentores = c("Moisés Lázaro Blázquez", "Miguel López Gadea",
+                 "Alejandro  Lázaro Badenas", "José María Gómez Fuster",
+                 "Juanjo Carrasco", "Mariano Molina García", "Arturo Berzosa Moreno"),
+    sector=c("Público carreteras", "Gestión privada", "Construcción", "Puertos", "Consultoría hidráulica", "Construcción", "Formación privada")
+)
+
+```
+
+.pull-left[
+
+```{r echo=FALSE}
+knitr::kable(participes[1:5,1:2], format = "html")
+
+```
+
+]
+
+.pull-right[
+
+```{r echo=FALSE}
+knitr::kable(participes[,3:4], format = "html")
+
+```
+]
+
+---
 class: inverse, center, middle,animated, jackInTheBox
 
 # Si tienes talento, no lo uses para llegar más lejos, úsalo para llegar más acompañado
